@@ -1,0 +1,93 @@
+@use 'variables' as var;
+
+.section-intro {
+    position: relative;
+    max-width: 768px;
+
+    .character {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 30px;
+        }
+
+        span {
+            font-size: .9rem;
+            margin-left: 12px;
+            color: var.$grey2;
+        }
+    }
+}
+
+.form {
+
+    input, textarea {
+        border: none;
+        font-family: 'Tinos', sans-serif;
+    }
+
+    .title {
+        height: 45px;
+        font-size: var.$f-large;
+    }
+
+    .body {
+        height: 175px;
+        font-size: 18px;
+    }
+
+    button {
+        position: absolute;
+        top: 31px;
+        right: 24px;
+        color: var.$white;
+        background-color: green;
+        padding: 4px 12px;
+    }
+}
+
+.section {
+    flex: 1;
+
+    &-title {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    &-item {
+        padding: 24px 0 12px;
+    }
+
+    .isempty {
+        text-align: center;
+        line-height: 3;
+    }
+}
+
+.item {
+    border-bottom: 2px solid var.$grey1;
+
+    &-title {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    &-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: var.$f-light;
+        color: var.$grey2;
+    }
+
+    button {
+        padding: 4px 12px;
+        font-size: var.$f-light;
+    }
+
+    button:last-child {
+        margin-left: 4px;
+        background-color: green;
+        color: var.$white;
+    }
+
+}

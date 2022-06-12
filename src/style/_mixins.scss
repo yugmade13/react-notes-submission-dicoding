@@ -1,0 +1,9 @@
+$breakpoint: (
+    "tablet" : "768px"
+);
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoint, $size)) {
+        @content;
+    }
+}
